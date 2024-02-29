@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+from .forms import CapturePhoneNumbers
+
 def index(request):
-  return render(request, "example/index.html", {})
+  form = CapturePhoneNumbers()
+  return render(request, "example/index.html", {"form": form})
