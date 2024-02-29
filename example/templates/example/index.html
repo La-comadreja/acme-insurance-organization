@@ -3,7 +3,7 @@
     <h1>Acme Insurance Organization: SMS Campaign</h1>
     <p>Please enter the phone numbers of the people you want to send the promotional campaign to, separated by a comma. Write them in this format: 18001234567,12127654321,19786660000</p>
     {% block title %}
-    Capture Phone Numbers
+    Send Phone Numbers
     {% endblock %}
     {% block content %}
     <form method="post" action="/" class="form-group">
@@ -13,5 +13,6 @@
       <button name="Submit" type="submit">Submit</button>
     </form>
     {% endblock %}
+    <p>{{ phone_numbers }}</p>
   </body>
 </html>
