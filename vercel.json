@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "acme_insurance_organization/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "acme_insurance_organization/wsgi.py"
+    }
+  ]
+}
